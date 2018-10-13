@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="A simple customized loading spinner made with SVG">
+<meta name="author" content="felipebiox">
+
+<title>SVG loading spinner</title>
+
+<!-- This file contains the spinner CSS with animation -->
+<style>
+/*COLORS FOR THEMES */
+svg circle.logo-main-circle {
+    stroke: #819ec8;
+}
+svg.logo-spinner .logo-minor-circle {
+    fill: #142d50;
+}
+</style>
+</head>
+<body>
+
+  <div id="random-container" style="width: 48px; margin: 20px auto 40px auto;">
+
+    <!-- THIS IS THE SPINNER -->
+    <svg class="logo-spinner" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Main circle -->
+      <circle class="logo-main-circle" cx="24" cy="24" r="16" stroke-width="4px" fill="transparent"></circle>
+
+      <!-- Points -->
+      <circle class="logo-minor-circle" cx="14" cy="10" r="4">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 24 24" to="360 24 24" dur="1s" repeatCount="indefinite"></animateTransform>
+      </circle>
+      <circle class="logo-minor-circle" cx="40" cy="24" r="4">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 24 24" to="360 24 24" dur="1s" repeatCount="indefinite"></animateTransform>
+      </circle>
+      <circle class="logo-minor-circle" cx="14" cy="38" r="4">
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 24 24" to="360 24 24" dur="1s" repeatCount="indefinite"></animateTransform>
+      </circle>
+
+
+    </svg>
+    <!-- END SPINNER -->
+
+  </div>
+
+</body>
+</html>
